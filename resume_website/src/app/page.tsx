@@ -1,21 +1,26 @@
+"use client";
 import Image from 'next/image'
 import styles from './page.module.css'
+import HomeCarousel from './components/HomeCarousel'
 
 export default function Home() {
   return (<>
     <div className={styles.navbar}>
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+      <header className={styles.navbar_components}>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Work Experience</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
     <main className={styles.main}>
-      <h1 className={styles.title}> Evan Fisher-Perez Resume</h1>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-      </div>
+      <h1 className={styles.title}> Evan Fisher-Perez</h1>
+      <HomeCarousel />
 
       <div className={styles.center}>
         test

@@ -23,11 +23,24 @@
   left: 0;
   right: 0;
   height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+  color: #FFA559;
+  font-family: PalanquinDark-Medium;
 }
 
-/* The links in navbar  */
-.navbar a {
-  color: #FFA559;
+.navbar_components {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.navbar_components * {
+  display: inline;
+}
+
+.navbar_components li {
+  margin-right: 90px;
 }
 
 .description {
@@ -231,4 +244,10 @@
   font-family: "AbrilFatface-Regular";   /*Can be any text*/
   src: local("AbrilFatface-Regular"),
     url("./fonts/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PalanquinDark-Medium";   /*Can be any text*/
+  src: local("PalanquinDark-Medium"),
+    url("./fonts/PalanquinDark-Medium.ttf") format("truetype");
 }
