@@ -1,83 +1,32 @@
 "use client";
-import Image from 'next/image'
 import styles from './page.module.css'
-import HomeCarousel from './components/HomeCarousel'
+import { BrowserRouter as Router, Route, Link, BrowserRouter, Routes } from "react-router-dom";
+import Main from './pages/Main';
+
 
 export default function Home() {
   return (<>
+  <BrowserRouter>
     <div className={styles.navbar}>
       <header className={styles.navbar_components}>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Work Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Other</a></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/1">Projects</Link></li>
+          <li><Link to="/2">Work Experience</Link></li>
+          <li><Link to="/3">Education</Link></li>
+          <li><Link to="/4">Other</Link></li>
+        </ul>  
       </header>
     </div>
-    <main className={styles.main}>
-      <h1 className={styles.title}> Evan Fisher-Perez</h1>
-      <HomeCarousel />
+    <Routes>
+      <Route index element={<Main />} />
+      <Route path="/projects" element={<> </>} />
+      <Route path="/work" element={<> </>} />
+      <Route path="/education" element={<> </>} />
+      <Route path="/other" element={<> </>} />
+    </Routes>
+  </BrowserRouter>
 
-      <div className={styles.center}>
-        test
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-      <p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p><p>TEST</p>
-    </main>
   </>)
 }
+

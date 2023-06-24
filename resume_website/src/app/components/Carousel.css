@@ -1,0 +1,10 @@
+.homeImage {
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.dot {
+  padding: 10px;
+}
