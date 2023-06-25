@@ -2,6 +2,7 @@
 import styles from './page.module.css'
 import { BrowserRouter as Router, Route, Link, BrowserRouter, Routes } from "react-router-dom";
 import Main from './pages/Main';
+import MeDisc from './pages/MeDisc';
 
 
 export default function Home() {
@@ -11,20 +12,24 @@ export default function Home() {
       <header className={styles.navbar_components}>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/1">Projects</Link></li>
-          <li><Link to="/2">Work Experience</Link></li>
-          <li><Link to="/3">Education</Link></li>
-          <li><Link to="/4">Other</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/work">Work Experience</Link></li>
+          <li><Link to="/education">Education</Link></li>
+          <li><Link to="/other">Other</Link></li>
+          <li><Link to="/meDisc">MeDisc</Link></li>
         </ul>  
       </header>
     </div>
-    <Routes>
-      <Route index element={<Main />} />
-      <Route path="/projects" element={<> </>} />
-      <Route path="/work" element={<> </>} />
-      <Route path="/education" element={<> </>} />
-      <Route path="/other" element={<> </>} />
-    </Routes>
+    <main className={styles.main}>
+      <Routes>
+        <Route index element={<Main />} />
+        <Route path="/projects" element={<> </>} />
+        <Route path="/work" element={<> </>} />
+        <Route path="/education" element={<> </>} />
+        <Route path="/other" element={<> </>} />
+        <Route path="/meDisc" element={<MeDisc />} />
+      </Routes>
+    </main>
   </BrowserRouter>
 
   </>)

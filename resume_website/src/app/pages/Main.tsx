@@ -8,14 +8,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default function Main () {
 
   return (<>
-    
-  <main className={styles.main}>
     <h1 className={styles.title}> Evan Fisher-Perez</h1>
-
     <div className={styles.center}>
-      {/* <HomeCarousel /> */}
       <Gallery />
-      
     </div>
 
     <div className={styles.grid}>
@@ -69,7 +64,6 @@ export default function Main () {
         </p>
       </a>
     </div>
-  </main>
   </>)
 
 }

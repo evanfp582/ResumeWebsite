@@ -1,0 +1,13 @@
+{
+  "courses": [
+    {
+      "name": "Ellison Park",
+      "numOfHoles": 18
+    },
+    {
+      "name": "Shadow Pines",
+      "numOfHoles": 18
+    }
+  ]
+  
+}
