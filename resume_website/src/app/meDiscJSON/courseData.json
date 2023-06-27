@@ -2,11 +2,51 @@
   "courses": [
     {
       "name": "Ellison Park",
-      "numOfHoles": 18
+      "numOfHoles": 18,
+      "holes": [
+        {"par": 3, "distance": 381},
+        {"par": 3, "distance": 218},
+        {"par": 3, "distance": 292},
+        {"par": 3, "distance": 231},
+        {"par": 3, "distance": 264},
+        {"par": 4, "distance": 612},
+        {"par": 3, "distance": 215},
+        {"par": 3, "distance": 357},
+        {"par": 3, "distance": 218},
+        {"par": 3, "distance": 304},
+        {"par": 4, "distance": 474},
+        {"par": 3, "distance": 524},
+        {"par": 4, "distance": 605},
+        {"par": 3, "distance": 264},
+        {"par": 3, "distance": 368},
+        {"par": 3, "distance": 314},
+        {"par": 3, "distance": 256},
+        {"par": 3, "distance": 298}
+      ]
     },
     {
       "name": "Shadow Pines",
-      "numOfHoles": 18
+      "numOfHoles": 18,
+      "holes": [
+        {"par": 4, "distance": 515},
+        {"par": 3, "distance": 225},
+        {"par": 4, "distance": 490},
+        {"par": 3, "distance": 285},
+        {"par": 4, "distance": 615},
+        {"par": 3, "distance": 265},
+        {"par": 3, "distance": 255},
+        {"par": 3, "distance": 285},
+        {"par": 3, "distance": 320},
+        {"par": 4, "distance": 515},
+        {"par": 4, "distance": 555},
+        {"par": 3, "distance": 325},
+        {"par": 3, "distance": 380},
+        {"par": 4, "distance": 415},
+        {"par": 3, "distance": 420},
+        {"par": 3, "distance": 255},
+        {"par": 3, "distance": 275},
+        {"par": 5, "distance": 810}
+      ]
     }
   ]
   

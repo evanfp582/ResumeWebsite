@@ -4,8 +4,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Course from "../pages/MeDisc"
+import { MenuItem, TextField } from '@mui/material';
 
-const AddRound = () => {
+const AddRound = (props: {courseData: any}) => {
   return (
     <div>
       <Accordion>
@@ -17,10 +19,19 @@ const AddRound = () => {
           <Typography>Click To Add a New Round</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <TextField
+            id="outlined-select-currency"
+            select
+            label="Select"
+            defaultValue="EUR"
+            helperText="Please select your currency"
+          >
+            {props?.courseData?.map((option, index) => (
+              <MenuItem key={index} value={option.name}>
+                {option.name}
+              </MenuItem>
+            ))}
+          </TextField>
         </AccordionDetails>
       </Accordion>
       
